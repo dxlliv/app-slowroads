@@ -1,0 +1,11 @@
+{
+  "name": "owd-app-slowroads",
+  "version": "0.0.1",
+  "description": "SlowRoads Game for your Open Web Desktop client",
+  "keywords": [
+    "owd-client",
+    "owd-apps",
+    "owd-modules"
+  ],
+  "homepage": "https://github.com/dxlliv/owd-app-slowroads"
+}
