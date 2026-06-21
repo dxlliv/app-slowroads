@@ -1,1 +1,8 @@
 node_modules
+.nuxt
+dist
+.output
+playground/.nuxt
+playground/node_modules
+playground/.output
+._*

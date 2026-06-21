@@ -12,12 +12,26 @@
 
 This app for Open Web Desktop allows you to play Slow Roads.
 
+[Demo](https://dxlliv.github.io/app-slowroads/) · [Documentation](https://owdproject.github.io/docs/)
+
 ## Installation
 
 ```bash
-owd install-app owd-app-slowroads
+pnpm desktop add app-slowroads --from dxlliv
+```
+
+## Configuration
+
+Add the app to your `desktop.config.ts`:
+
+```ts
+export default defineDesktopConfig({
+  apps: [
+    '@owdproject/app-slowroads'
+  ]
+})
 ```
 
 ## License
 
-The application is released under the [MIT License](LICENSE).
+This application is released under the [MIT License](LICENSE).

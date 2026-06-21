@@ -1,11 +1,61 @@
 {
-  "name": "owd-app-slowroads",
+  "name": "@owdproject/app-slowroads",
   "version": "0.0.1",
-  "description": "SlowRoads Game for your Open Web Desktop client",
+  "description": "Slow Roads Game for your Open Web Desktop client",
   "keywords": [
     "owd-client",
     "owd-apps",
     "owd-modules"
   ],
-  "homepage": "https://github.com/dxlliv/owd-app-slowroads"
+  "license": "MIT",
+  "homepage": "https://github.com/dxlliv/app-slowroads",
+  "author": {
+    "name": "dxlliv"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/types.d.mts",
+      "development": "./src/module.ts",
+      "import": "./dist/module.mjs",
+      "default": "./dist/module.mjs"
+    }
+  },
+  "main": "./dist/module.mjs",
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./dist/types.d.mts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "nx": {
+    "name": "app-slowroads"
+  },
+  "scripts": {
+    "prepack": "nuxt-module-build build",
+    "dev": "pnpm run dev:prepare && cd playground && pnpm exec nuxt dev",
+    "dev:build": "nuxt build playground",
+    "dev:generate": "NUXT_APP_BASE_URL=${NUXT_APP_BASE_URL:-/app-slowroads/} nuxt generate playground",
+    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && cd playground && pnpm exec nuxt prepare",
+    "validate": "desktop validate ."
+  },
+  "dependencies": {
+    "@nuxt/kit": "^4.4.6",
+    "@owdproject/kit-tailwind": "workspace:*"
+  },
+  "peerDependencies": {
+    "@owdproject/core": "^3.4.0"
+  },
+  "devDependencies": {
+    "@nuxt/module-builder": "^1.0.2",
+    "@nuxt/schema": "^4.4.6",
+    "@owdproject/core": "workspace:*",
+    "@owdproject/theme-nova": "workspace:*",
+    "nuxt": "^4.4.6",
+    "typescript": "~6.0.3"
+  }
 }
