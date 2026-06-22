@@ -5,7 +5,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <WindowIframe
+  <DesktopWindowIframe
     width="100%"
     height="100%"
     src="https://slowroads.io/"
