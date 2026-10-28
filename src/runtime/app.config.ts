@@ -25,7 +25,7 @@ export default {
     },
   },
   commands: {
-    slowroads: (app: IApplicationController) => {
+    slowroads: (app: any) => {
       app.openWindow('main')
     },
   },
