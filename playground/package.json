@@ -1,5 +1,5 @@
 {
-  "name": "@owdproject/app-slowroads-playground",
+  "name": "@owdproject/nuxt-app-slowroads-playground",
   "private": true,
   "type": "module",
   "scripts": {
@@ -8,9 +8,9 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@owdproject/app-slowroads": "workspace:*",
+    "@owdproject/nuxt-app-slowroads": "workspace:*",
     "@owdproject/core": "^4.0.0-alpha.3",
-    "@owdproject/theme-nuxt-nova": "^4.0.0-alpha.3",
+    "@owdproject/nuxt-theme-nova": "^4.0.0-alpha.3",
     "nuxt": "^4.4.6"
   }
 }

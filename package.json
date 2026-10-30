@@ -1,5 +1,5 @@
 {
-  "name": "@owdproject/app-slowroads",
+  "name": "@owdproject/nuxt-app-slowroads",
   "version": "4.0.0-alpha.3",
   "description": "Slow Roads Game for your Open Web Desktop client",
   "keywords": [
@@ -45,7 +45,7 @@
   },
   "dependencies": {
     "@nuxt/kit": "^4.4.6",
-    "@owdproject/kit-nuxt-tailwind": "^4.0.0-alpha.3",
+    "@owdproject/nuxt-kit-tailwind": "^4.0.0-alpha.3",
     "@owdproject/nuxt": "^4.0.0-alpha.3"
   },
   "peerDependencies": {
@@ -56,7 +56,7 @@
     "@nuxt/module-builder": "^1.0.2",
     "@nuxt/schema": "^4.4.6",
     "@owdproject/core": "^4.0.0-alpha.3",
-    "@owdproject/theme-nuxt-nova": "^4.0.0-alpha.3",
+    "@owdproject/nuxt-theme-nova": "^4.0.0-alpha.3",
     "nuxt": "^4.4.6",
     "typescript": "~6.0.3"
   },

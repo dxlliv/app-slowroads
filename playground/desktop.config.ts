@@ -1,8 +1,8 @@
 import { defineDesktopConfig } from '@owdproject/nuxt'
 
 export default defineDesktopConfig({
-  theme: '@owdproject/theme-nuxt-nova',
-  apps: ['@owdproject/app-slowroads'],
+  theme: '@owdproject/nuxt-theme-nova',
+  apps: ['@owdproject/nuxt-app-slowroads'],
   modules: [],
   systemBar: {
     enabled: true,
